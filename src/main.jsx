@@ -6,7 +6,7 @@ import App from './App';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='process.env.PUBLIC_URL'>
       <App />
     </BrowserRouter>
   </StrictMode>

@@ -53,7 +53,8 @@ function App(){
                         <div className='pl-1 pr-1 rounded-2xl bg-gray-300'>
                             <FontAwesomeIcon icon={faFile} className='text-sm'/>
                         </div>
-                        <a href={Resume} download ><span>My Resume</span></a>
+                        <a href={Resume} download ><span>
+                            &nbsp;My Resume</span></a>
                     </div>
                 </section>
             </div>

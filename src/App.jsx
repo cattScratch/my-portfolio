@@ -12,12 +12,37 @@ import Resume from './assets/files/Resume.pdf'
 import pfp from './assets/image/pfp.jpg';
 
 function App(){
-    //for active tab
+    //information to para don sa 1st container wag mo kakalimutan gumamit ako ng hashmap 
+    const infoItems = [
+  { 
+    icon: faSchool, 
+    label: "School", 
+    value: "Lyceum of Alabang" 
+  },
+  { 
+    icon: faCode, 
+    label: "Position", 
+    value: "Developer" 
+  },
+  { 
+    icon: faLocation, 
+    label: "Country", 
+    value: "Philippines" 
+  },
+  { 
+    icon: faFile, 
+    label: "My Resume",
+    value: "Downloadable",
+    link: Resume 
+  }
+];
+    //para to sa active tab don sa 2nd container
     const [active, setActive] = useState('about')
     return(
         <>
             {/* main container */}
-            <div className="flex ml-20 mt-25 gap-10 max-h-190">
+            <div className="flex ml-20 mt-20 gap-10 max-h-200">
+                {/* gusto ko sana i loop nalang din to kaso tinatamad pa ako */}
             <div className="rounded-[15px] bg-[#212121] pt-10 pr-10 pb-25 pl-10">
                 <div className="rounded-[15px] bg-[#5c5c5c3f] p-10">
                     <img src={pfp} alt="profile picure" className='p-0 m-0'/>
@@ -27,34 +52,26 @@ function App(){
                     <p className="font-bold">Computer Engineer</p>
                 </div>
                 <hr/>
+                {/* baka makalimutan mo puro function at, if else lang yan HAHAHAH */}
                 <section>
-                    
-                    <div className='pt-5 flex items-center'>
-                        <div className='p-2 rounded-[10px] bg-[#5c5c5c3f]'>
-                            <FontAwesomeIcon icon={faSchool} className='text-xs'/>
-                        </div>
-                        &nbsp;Lyceum of Alabang
-                    </div>
-                    <div className='pt-10 flex items-center'>
-                        <div className='p-2  rounded-[10px] bg-[#5c5c5c3f]'>
-                            <FontAwesomeIcon icon={faCode} className='text-xs'/>
-                        </div>
-                        &nbsp; Developer
-                    </div>
-                    <div className='pt-10 flex items-center'>
-                        <div className='p-2 rounded-[10px] bg-[#5c5c5c3f]'>
-                            <FontAwesomeIcon icon={faLocation} className='text-sm'/>
-                        </div>
-                        &nbsp;Philippines
-                    </div>
-                    <div className='pt-10 flex items-center'>
-                        <div className='p-2 rounded-[10px] bg-[#5c5c5c3f]'>
-                            <FontAwesomeIcon icon={faFile} className='text-sm'/>
-                        </div>
-                        <a href={Resume} download ><span>
-                            &nbsp;My Resume</span></a>
-                    </div>
+                    <div className="grid grid-cols-1 gap-y-6 pt-[3vh]">
+                        {infoItems.map((item, index) => (
+                            <div key={index} className="flex items-center pt-[1vh]">
+                                <div className="p-3 rounded-[10px] bg-[#5c5c5c3f]">
+                                    <FontAwesomeIcon icon={item.icon} className="text-xs" />
+                                </div>
+                            {item.link ? (<a href={item.link} download className="ml-2 text-blue-500">            
+                            {item.label}
+                            </a>
+                            ):(           
+                                <div className="ml-2">
+                                {item.label}: <br /> {item.value}
+                                </div>)}
+                            </div>
+                        ))}
+            </div>
                 </section>
+
             </div>
             {/* second container */}
             <div className='bg-[#212121] mr-15 rounded-[15px] max-w-360 max-h-500 overflow-hidden overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]' >

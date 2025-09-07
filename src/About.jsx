@@ -1,8 +1,46 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css";
+import "swiper/css/navigation";
+
+import { Navigation } from "swiper/modules";
+import { useRef, useEffect } from "react";
+
+import resWeb from './assets/image/responsiveWeb.png';
+
 function About(){
+    const swiperRef = useRef(null);
+    const prevButtonRef = useRef(null);
+    const nextButtonRef = useRef(null);
+
     const skills ={
             technical: ["Java", "JavaScript", "Python", "React.js", "ASP.NET Core", "HTML & CSS", "Tailwind", "Docker", "GitHub Desktop", "GitHub", "Postman", "MySQL", "Entity Framework", "LINQ", "RESTful API Development", "CRUD", "Clean Architecture", "CI/CD"],
-            soft: ["Problem-Solving", "Adaptability", "Team Collaboration", "Time Management", "Effective Communication", "Critical Thinking", "Creativity", "Work Ethic"]
+            soft: ["Problem-Solving", "Adaptability", "Team Collaboration", "Time Management", "Effective Communication", "Critical Thinking", "Creativity", "Work Ethic"],
+            certificate: [
+                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
+                
+            ],
         }
+
+    const updateButtonStates = (swiper) => {
+        if (prevButtonRef.current && nextButtonRef.current) {
+            // Update prev button opacity
+            if (swiper.isBeginning) {
+                prevButtonRef.current.style.opacity = '0.3';
+            } else {
+                prevButtonRef.current.style.opacity = '1';
+            }
+
+            // Update next button opacity
+            if (swiper.isEnd) {
+                nextButtonRef.current.style.opacity = '0.3';
+            } else {
+                nextButtonRef.current.style.opacity = '1';
+            }
+        }
+    };
+
     return(
         <>
         <section >
@@ -40,6 +78,51 @@ function About(){
                         </div>
                     ))
                     }
+                </div>
+
+
+                <h3 className="font-bold mt-15 text-5xl" >Certifications</h3>
+                <div className="ml-[20vh] mt-[5vh] relative w-full max-w-[100vh]">
+                    <Swiper
+                        ref={swiperRef}
+                        modules={[Navigation]}
+                        spaceBetween={20}
+                        slidesPerView={1}
+                        navigation={{
+                            nextEl: '.custom-next',
+                            prevEl: '.custom-prev',
+                        }}
+                        onSwiper={(swiper) => {
+                            // Initial button state
+                            updateButtonStates(swiper);
+                        }}
+                        onSlideChange={(swiper) => {
+                            // Update button states when slide changes
+                            updateButtonStates(swiper);
+                        }}
+                        className="w-full max-w-[120vh] "
+                        >
+                    {skills.certificate.map((cert,index) => (
+                        <SwiperSlide key={index}>
+                            <a href={cert.url} rel="noopener noreferrer"><img src={cert.img} alt={cert.title}/></a>
+                        </SwiperSlide>
+                    ))}
+                   </Swiper>                 
+                {/* Custom arrows outside image */}
+                    <button 
+                        ref={prevButtonRef}
+                        className="custom-prev absolute -left-12 top-1/2 -translate-y-1/2 text-white text-4xl z-20 transition-opacity duration-300"
+                        style={{opacity: '0.3'}}
+                    >
+                        &#10094; {/* Left arrow symbol */}
+                    </button>
+                    <button 
+                        ref={nextButtonRef}
+                        className="custom-next absolute -right-12 top-1/2 -translate-y-1/2 text-white text-4xl z-20 transition-opacity duration-300"
+                    >
+                        &#10095; {/* Right arrow symbol */}
+                    </button>
+                    
                 </div>
             </section>
         </section>

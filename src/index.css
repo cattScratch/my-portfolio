@@ -17,3 +17,28 @@ span{
   color: #3125d4;
   font-weight: bold;
 }
+/* Style Swiper navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  width: 60px;
+  height: 60px;
+  top: 50%;                     /* center vertically */
+  transform: translateY(-50%);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2.5rem;            /* arrow size */
+  font-weight: bold;
+}
+
+/* Move arrows outside the image */
+.swiper-button-prev {
+  left: -70px;   /* push left arrow outside */
+}
+
+.swiper-button-next {
+  right: -70px;  /* push right arrow outside */
+}
+

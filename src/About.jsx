@@ -43,6 +43,7 @@ function About(){
 
     return(
         <>
+        {/* Introduction */}
         <section >
             <h2 className="font-bold text-5xl ml-10 relative">
                 About
@@ -59,8 +60,9 @@ function About(){
                     <br /><br/>
                     My current goal is to grow and enhance my skills in software development, and <span>to be part of innovative projects that make a real impact.</span>
                 </p>
+                {/* Skills */}
                 <h3 className="font-bold mt-10 text-5xl" >Skills</h3>
-                
+                {/* Technical Skills */}
                 <h4 className=" mt-[5vh]">Technical Skills</h4>
                 <div className="grid grid-cols-4 mb-[5vh] gap-4 mt-5">
                     {skills.technical.map((skills,index) => (
@@ -70,6 +72,8 @@ function About(){
                         </div>
                     ))}
                 </div>
+
+                {/* Soft Skill */}
                 <h4>Soft Skills</h4>
                 <div className="grid grid-cols-4 gap-4 mt-5">
                     {skills.soft.map((skills,index) => (
@@ -80,7 +84,7 @@ function About(){
                     }
                 </div>
 
-
+                {/* Certifications */}
                 <h3 className="font-bold mt-15 text-5xl" >Certifications</h3>
                 <div className="ml-[20vh] mt-[5vh] relative w-full max-w-[100vh]">
                     <Swiper
@@ -126,6 +130,7 @@ function About(){
                 </div>
             </section>
         </section>
+        {/* Note for myself: ayan may mga comment na yan pag di mo pa naalala yan ewan ko nalang sayo!! */}
         </>
     );
 }export default About

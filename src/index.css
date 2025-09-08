@@ -5,12 +5,7 @@
 
 body{
   background-color: rgb(23, 23, 23);
-  display: flex;
-  gap: 1;
-  flex: 1 1 auto;
   color: white;
-  overflow-y: hidden;
-
 }
 
 span{

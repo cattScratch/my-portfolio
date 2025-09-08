@@ -83,7 +83,7 @@ function About(){
                 <h4>Soft Skills</h4>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-5">
                     {skills.soft.map((skills,index) => (
-                        <div key={index} className="bg-[#5c5c5c3f] text-center rounded-[5px] border-[#212121]  p-3">
+                        <div key={index} className="bg-[#5c5c5c3f] text-center rounded-[5px] border-[#212121] shadow-black shadow-sm p-3">
                             <p>{skills}</p>
                         </div>
                     ))
@@ -92,7 +92,7 @@ function About(){
 
                 {/* Certifications */}
                 <h3 className="font-bold mt-10 lg:mt-15 text-2xl lg:text-5xl" >Certifications</h3>
-                <div className="lg:ml-[14vh] mb-[5vh] lg:mb-[-2vh] ml-[5vh]  mt-[2vh] relative w-full max-w-[30vh] lg:max-w-[100vh]">
+                <div className="lg:ml-[14vh] mb-[5vh] lg:mb-[-2vh] ml-[2.5vh]  mt-[2.5vh] relative w-full max-w-[30vh] lg:max-w-[100vh]">
                     <Swiper
                         ref={swiperRef}
                         modules={[Navigation]}

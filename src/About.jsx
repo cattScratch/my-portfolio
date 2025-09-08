@@ -92,7 +92,7 @@ function About(){
 
                 {/* Certifications */}
                 <h3 className="font-bold mt-10 lg:mt-15 text-2xl lg:text-5xl" >Certifications</h3>
-                <div className="lg:ml-[14vh] mb-[5vh] lg:mb-[-2vh] ml-[5vh]  mt-[2.5vh] relative w-full max-w-[30vh] lg:max-w-[100vh]">
+                <div className="lg:ml-[14vh] mb-[5vh] lg:mb-[-2vh] ml-[5vh]  mt-[2vh] relative w-full max-w-[30vh] lg:max-w-[100vh]">
                     <Swiper
                         ref={swiperRef}
                         modules={[Navigation]}

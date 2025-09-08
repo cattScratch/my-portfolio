@@ -53,7 +53,7 @@ function About(){
         <section >
             <h2 className="font-bold text-[2vh] lg:text-5xl ml-1 lg:ml-10 relative">
                 About
-                <div className="absolute -bottom-2 lg:-bottom-4 left-[3vh] transform -translate-x-1/2 w-15 h-1 bg-[#3125d4] rounded-full"></div>
+                <div className="absolute -bottom-2 lg:-bottom-4 left-[3vh] transform -translate-x-1/2 w-10 lg:w-15 h-1 bg-[#3125d4] rounded-full"></div>
             </h2>
             <section className=":lg:text-2xl pt-10 lg:p-10 ">
                 <p className="text-center border p-5 border-[#212121] shadow-black shadow-sm rounded-lg leading-relaxed">
@@ -92,7 +92,7 @@ function About(){
 
                 {/* Certifications */}
                 <h3 className="font-bold mt-10 lg:mt-15 text-2xl lg:text-5xl" >Certifications</h3>
-                <div className="lg:ml-[14vh] ml-[2vh] mt-[5vh] relative w-full max-w-[30vh] lg:max-w-[100vh]">
+                <div className="lg:ml-[14vh] mb-[5vh] lg:mb-[-2vh] ml-[2vh] mt-[5vh] relative w-full max-w-[30vh] lg:max-w-[100vh]">
                     <Swiper
                         ref={swiperRef}
                         modules={[Navigation]}

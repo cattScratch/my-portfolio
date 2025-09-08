@@ -53,7 +53,7 @@ function About(){
         <section >
             <h2 className="font-bold text-[2vh] lg:text-5xl ml-1 lg:ml-10 relative">
                 About
-                <div className="absolute -bottom-2 lg:-bottom-4 left-[3vh] transform -translate-x-1/2 w-10 lg:w-15 h-1 bg-[#3125d4] rounded-full"></div>
+                <div className="absolute hidden lg:block -bottom-2 lg:-bottom-4 left-[3vh] transform -translate-x-1/2 w-10 lg:w-15 h-1 bg-[#3125d4] rounded-full"></div>
             </h2>
             <section className=":lg:text-2xl pt-10 lg:p-10 ">
                 <p className="text-center border p-5 border-[#212121] shadow-black shadow-sm rounded-lg leading-relaxed">

@@ -3,7 +3,7 @@ function Blog(){
         <>
             <h2 className="font-bold text-[2vh] lg:text-5xl lg:ml-10 relative">
                 Blog
-                <div className="absolute lg:-top-2 lg:mt-[7vh] -right-0 mr-[29.5vh] lg:mr-[121.5vh] transform -translate-x-1/2 w-5 lg:w-15 h-1 bg-[#3125d4] rounded-full"></div>
+                <div className="absolute hidden lg:block lg:-top-2 lg:mt-[7vh] -right-0 mr-[29.5vh] lg:mr-[121.5vh] transform -translate-x-1/2 w-5 lg:w-15 h-1 bg-[#3125d4] rounded-full"></div>
             </h2>
             
             <section className="text-2xl p-10">

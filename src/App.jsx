@@ -56,14 +56,14 @@ function App(){
                     </p>
                     
                     <div className="mt-5 mb-2 lg:mb-10 p-2 text-center rounded-[5px] bg-[#5c5c5c3f]">
-                        <p className="font-bold text-sm sm:text-base">Computer Engineer</p>
+                        <p className="font-bold  text-sm sm:text-base">Computer Engineer</p>
                     </div>
                     
                     <hr className='hidden lg:block'/>
                     
                     {/* baka makalimutan mo puro function at, if else lang yan HAHAHAH */}
                     <section>
-                        <div className="grid grid-cols-2 lg:grid-cols-1 gap-y-4 lg:gap-y-6 pt-4 lg:pt-[3vh]">
+                        <div className="grid items-center grid-cols-2 lg:grid-cols-1 gap-y-4 lg:gap-y-6 pt-4 lg:pt-[3vh]">
                             {infoItems.map((item, index) => (
                                 <div key={index} className="flex items-center pt-2 lg:pt-[1vh]">
                                     <div className="p-2 lg:p-3">
@@ -88,7 +88,7 @@ function App(){
                 <div className='w-[80%] lg:h-[85vh] lg:mt-[4vh] lg:bg-[#212121] rounded-[15px]  lg:w-full lg:max-w-360  overflow-hidden overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]' >
                     
                     {/* RESPONSIVE: center nav on mobile, right-aligned on lg+ */}
-                    <ul className='flex gap-3 sm:gap-5 lg:justify-center lg:ml-265 pt-2 lg:pt-10 px-[8vh] lg:px-0 font-bold text-lg sm:text-xl lg:text-2xl '>
+                    <ul className='flex gap-3 sm:gap-5 justify-center lg:justify-center lg:ml-265 pt-2 lg:pt-10 px-[8vh] lg:px-0 font-bold text-lg sm:text-xl lg:text-2xl '>
                         <li className={`p-2 rounded-[5px] cursor-pointer text-sm sm:text-base lg:text-2xl ${active === 'about' ? 'bg-[#5c5c5c3f] text-white shadow-black shadow-sm ' : 'bg-[#5c5c5c3f]'}`}
                             onClick={() => setActive('about')} >
                             About

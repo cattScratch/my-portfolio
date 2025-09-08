@@ -19,7 +19,13 @@ function About(){
             soft: ["Problem-Solving", "Adaptability", "Team Collaboration", "Time Management", "Effective Communication", "Critical Thinking", "Creativity", "Work Ethic"],
             certificate: [
                 {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
-                
+                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
+                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
+                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
+                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
+                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
+                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
+                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
             ],
         }
 
@@ -45,11 +51,11 @@ function About(){
         <>
         {/* Introduction */}
         <section >
-            <h2 className="font-bold text-5xl ml-10 relative">
+            <h2 className="font-bold text-[2vh] lg:text-5xl ml-1 lg:ml-10 relative">
                 About
-                <div className="absolute -bottom-4 left-[3vh] transform -translate-x-1/2 w-15 h-1 bg-[#3125d4] rounded-full"></div>
+                <div className="absolute -bottom-2 lg:-bottom-4 left-[3vh] transform -translate-x-1/2 w-15 h-1 bg-[#3125d4] rounded-full"></div>
             </h2>
-            <section className="text-2xl p-10">
+            <section className=":lg:text-2xl pt-10 lg:p-10 ">
                 <p className="text-center border p-5 border-[#212121] shadow-black shadow-sm rounded-lg leading-relaxed">
                     Hi! I'm Marck Justine Guiaz, a fresh graduate in <span>Computer Engineering</span> from Lyceum of Alabang.
                     <br /><br/>
@@ -61,10 +67,10 @@ function About(){
                     My current goal is to grow and enhance my skills in software development, and <span>to be part of innovative projects that make a real impact.</span>
                 </p>
                 {/* Skills */}
-                <h3 className="font-bold mt-10 text-5xl" >Skills</h3>
+                <h3 className="font-bold mt-10 lg:mt-10 text-2xl lg:text-5xl" >Skills</h3>
                 {/* Technical Skills */}
-                <h4 className=" mt-[5vh]">Technical Skills</h4>
-                <div className="grid grid-cols-4 mb-[5vh] gap-4 mt-5">
+                <h4 className="mt-[2vh]">Technical Skills</h4>
+                <div className="grid grid-cols-2 lg:grid-cols-4 mb-[5vh] gap-4 mt-5">
                     {skills.technical.map((skills,index) => (
                         <div key={index} 
                         className="bg-[#5c5c5c3f] rounded-[5px] border-[#212121] shadow-black shadow-sm p-3">
@@ -75,7 +81,7 @@ function About(){
 
                 {/* Soft Skill */}
                 <h4>Soft Skills</h4>
-                <div className="grid grid-cols-4 gap-4 mt-5">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-5">
                     {skills.soft.map((skills,index) => (
                         <div key={index} className="bg-[#5c5c5c3f] rounded-[5px] border-[#212121] shadow-black shadow-sm p-3">
                             <p>{skills}</p>
@@ -85,8 +91,8 @@ function About(){
                 </div>
 
                 {/* Certifications */}
-                <h3 className="font-bold mt-15 text-5xl" >Certifications</h3>
-                <div className="ml-[20vh] mt-[5vh] relative w-full max-w-[100vh]">
+                <h3 className="font-bold mt-10 lg:mt-15 text-2xl lg:text-5xl" >Certifications</h3>
+                <div className="lg:ml-[14vh] ml-[2vh] mt-[5vh] relative w-full max-w-[30vh] lg:max-w-[100vh]">
                     <Swiper
                         ref={swiperRef}
                         modules={[Navigation]}
@@ -104,7 +110,7 @@ function About(){
                             // Update button states when slide changes
                             updateButtonStates(swiper);
                         }}
-                        className="w-full max-w-[120vh] "
+                        className="w-full lg:max-w-[120vh]"
                         >
                     {skills.certificate.map((cert,index) => (
                         <SwiperSlide key={index}>
@@ -115,14 +121,14 @@ function About(){
                 {/* Custom arrows outside image */}
                     <button 
                         ref={prevButtonRef}
-                        className="custom-prev absolute -left-12 top-1/2 -translate-y-1/2 text-white text-4xl z-20 transition-opacity duration-300"
+                        className="custom-prev absolute -left-[3vh] lg:-left-12 top-1/2 -translate-y-1/2 text-white text-4xl z-20 transition-opacity duration-300"
                         style={{opacity: '0.3'}}
                     >
                         &#10094; {/* Left arrow symbol */}
                     </button>
                     <button 
                         ref={nextButtonRef}
-                        className="custom-next absolute -right-12 top-1/2 -translate-y-1/2 text-white text-4xl z-20 transition-opacity duration-300"
+                        className="custom-next absolute -right-[3vh] lg:-right-12 top-1/2 -translate-y-1/2 text-white text-4xl z-20 transition-opacity duration-300"
                     >
                         &#10095; {/* Right arrow symbol */}
                     </button>

@@ -55,7 +55,7 @@ function About(){
                 About
                 <div className="absolute hidden lg:block -bottom-2 lg:-bottom-4 left-[3vh] transform -translate-x-1/2 w-10 lg:w-15 h-1 bg-[#3125d4] rounded-full"></div>
             </h2>
-            <section className=":lg:text-2xl pt-10 lg:p-10 ">
+            <section className=":lg:text-2xl pt-5 lg:p-10 ">
                 <p className="text-center border p-5 border-[#212121] shadow-black shadow-sm rounded-lg leading-relaxed">
                     Hi! I'm Marck Justine Guiaz, a fresh graduate in <span>Computer Engineering</span> from Lyceum of Alabang.
                     <br /><br/>
@@ -83,7 +83,7 @@ function About(){
                 <h4>Soft Skills</h4>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-5">
                     {skills.soft.map((skills,index) => (
-                        <div key={index} className="bg-[#5c5c5c3f] text-center rounded-[5px] border-[#212121] shadow-black shadow-sm p-3">
+                        <div key={index} className="bg-[#5c5c5c3f] text-center rounded-[5px] border-[#212121]  p-3">
                             <p>{skills}</p>
                         </div>
                     ))

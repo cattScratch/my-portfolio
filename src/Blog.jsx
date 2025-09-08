@@ -74,9 +74,9 @@ function Blog(){
                         </VerticalTimeline>
                     <p className="text-[2vh] border p-5 border-[#212121] shadow-black shadow-sm rounded-lg leading-relaxed">
                             Now I am a Graduate from being student, I'm Currently trying to patch some of my knowledge gaps and enhance my skills not only in web development but also
-                            in Data Structure and ALgorithms.
+                            in Data Structure and Algorithms.
                             <br/><br/>
-                            For now this is only a simple blog page, but in the future I plan to add more features because if this became long it is pain in the ass to those people who read this,
+                            For now this is only a simple blog page, but in the future I plan to add more features because if this continued, it is pain in the ass for those people who tried read this,
                             I'm also trying to keep this as summarize as possible because I know most of the people ain't reading alot.
                     </p>
 

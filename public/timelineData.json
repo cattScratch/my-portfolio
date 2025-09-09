@@ -1,0 +1,42 @@
+[
+  {
+    "date": "2021 (Student)",
+    "background": "#5c5c5c3f",
+    "textColor": "#fff",
+    "iconBg": "#212121",
+    "iconColor": "#000000",
+    "content": "1st Year of College, language that they taught us was Java with few activities and Data Structure."
+  },
+  {
+    "date": "2022 (Student)",
+    "background": "#5c5c5c3f",
+    "textColor": "#fff",
+    "iconBg": "#212121",
+    "iconColor": "#fff",
+    "content": "We still using java and make a project with it, but aside from that I tried to learned Web Development that is where I found FreeCodeCamp."
+  },
+  {
+    "date": "2023 (Student)",
+    "background": "#5c5c5c3f",
+    "textColor": "#fff",
+    "iconBg": "#212121",
+    "iconColor": "#fff",
+    "content": "We use different language like python and learned Operating Systems, BASH, Networking and technoprenuership."
+  },
+  {
+    "date": "2024 (Student)",
+    "background": "#5c5c5c3f",
+    "textColor": "#fff",
+    "iconBg": "#212121",
+    "iconColor": "#fff",
+    "content": "We used arduino for our embedded system subject, and use C for programming it. Also I tried to learn React.js and Tailwind CSS"
+  },
+  {
+    "date": "2025 (Student)",
+    "background": "#5c5c5c3f",
+    "textColor": "#fff",
+    "iconBg": "#212121",
+    "iconColor": "#fff",
+    "content": "I become backend developer Intern at MONAD Solutions, my mentor is approachable and kind, I learned a lot from him. And our capstone we use python to program the uniAR: Uniform Fitting Kiosk using Augmented Reality"
+  }
+]

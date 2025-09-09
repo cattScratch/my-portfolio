@@ -5,29 +5,26 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
-import { useRef, useEffect } from "react";
-
-import resWeb from './assets/image/responsiveWeb.png';
+import { useState, useEffect, useRef } from "react";
 
 function About(){
     const swiperRef = useRef(null);
     const prevButtonRef = useRef(null);
     const nextButtonRef = useRef(null);
 
-    const skills ={
-            technical: ["Java", "JavaScript", "Python", "React.js", "ASP.NET Core", "HTML & CSS", "Tailwind", "Docker", "GitHub Desktop", "GitHub", "Postman", "MySQL", "Entity Framework", "LINQ", "RESTful API Development", "CRUD", "Clean Architecture", "CI/CD"],
-            soft: ["Problem-Solving", "Adaptability", "Team Collaboration", "Time Management", "Effective Communication", "Critical Thinking", "Creativity", "Work Ethic"],
-            certificate: [
-                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
-                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
-                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
-                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
-                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
-                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
-                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
-                {title : "Responsive Web Design", img: resWeb, url: `https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design`},
-            ],
-        }
+    const [skills, setSkills] = useState(null);
+
+        useEffect(() => {
+        fetch("/my-portfolio/skills.json")
+        .then((response) => {
+            if (!response.ok) throw new Error("Failed to fetch");
+            return response.json();
+        })
+        .then((json) => setSkills(json))
+        .catch((error) => console.error("Error fetching data:", error));
+        }, []);
+
+        if (!skills) return <p>Loading...</p>;
 
     const updateButtonStates = (swiper) => {
         if (prevButtonRef.current && nextButtonRef.current) {
@@ -55,7 +52,7 @@ function About(){
                 About
                 <div className="absolute hidden lg:block -bottom-2 lg:-bottom-4 left-[3vh] transform -translate-x-1/2 w-10 lg:w-15 h-1 bg-[#3125d4] rounded-full"></div>
             </h2>
-            <section className=":lg:text-2xl pt-5 lg:p-10 ">
+            <section className="lg:text-2xl pt-5 lg:p-10 ">
                 <p className="text-center border p-5 border-[#212121] shadow-black shadow-sm rounded-lg leading-relaxed">
                     Hi! I'm Marck Justine Guiaz, a fresh graduate in <span>Computer Engineering</span> from Lyceum of Alabang.
                     <br /><br/>

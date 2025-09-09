@@ -1,15 +1,19 @@
+//icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSchool } from '@fortawesome/free-solid-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faLocation } from '@fortawesome/free-solid-svg-icons';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
+//components
 import About from './About'
 import Project from './Project';
 import Blog from './Blog';
+//hooks
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+//files and images
 import Resume from './assets/files/Resume.pdf'
-import pfp from './assets/image/pfp.jpg';
+import pfp from '../public/image/pfp.jpg';
 
 function App(){
     //information to para don sa 1st container wag mo kakalimutan gumamit ako ng hashmap 

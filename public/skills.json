@@ -1,0 +1,49 @@
+{
+  "technical": [
+    "Java",
+    "JavaScript",
+    "Python",
+    "React.js",
+    "ASP.NET Core",
+    "HTML & CSS",
+    "Tailwind",
+    "Docker",
+    "GitHub Desktop",
+    "GitHub",
+    "Postman",
+    "MySQL",
+    "Entity Framework",
+    "LINQ",
+    "RESTful API Development",
+    "CRUD",
+    "Clean Architecture",
+    "CI/CD"
+  ],
+  "soft": [
+    "Problem-Solving",
+    "Adaptability",
+    "Team Collaboration",
+    "Time Management",
+    "Effective Communication",
+    "Critical Thinking",
+    "Creativity",
+    "Work Ethic"
+  ],
+  "certificate": [
+    {
+      "title": "Responsive Web Design",
+      "img": "/my-portfolio/image/responsiveWeb.png",
+      "url": "https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design"
+    },
+    {
+      "title": "Responsive Web Design",
+      "img": "/my-portfolio/image/responsiveWeb.png",
+      "url": "https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design"
+    },
+    {
+      "title": "Responsive Web Design",
+      "img": "/my-portfolio/image/responsiveWeb.png",
+      "url": "https://www.freecodecamp.org/certification/fccf70b1170-73bb-4826-9254-66570a1db65a/responsive-web-design"
+    }
+  ]
+}

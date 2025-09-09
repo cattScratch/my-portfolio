@@ -1,48 +1,27 @@
+//Timline
 import {VerticalTimeLine, VerticalTimelineElement, VerticalTimeline} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+//icons
+import { faSchool } from '@fortawesome/free-solid-svg-icons';
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+
+import { useState, useEffect} from "react";
+
 function Blog(){
-    const timelineData = [
-  {
-    date: "2021 (Student)",
-    background: "#5c5c5c3f",
-    textColor: "#fff",
-    iconBg: "#212121",
-    iconColor: "#000000",
-    content: "1st Year of College, language that they taught us was Java with few activities and Data Structure."
-  },
-  {
-    date: "2022 (Student)",
-    background: "#5c5c5c3f",
-    textColor: "#fff",
-    iconBg: "#212121",
-    iconColor: "#fff",
-    content: "We still using java and make a project with it, but aside from that I tried to learned Web Development that is where I found FreeCodeCamp."
-  },
-  {
-    date: "2023 (Student)",
-    background: "#5c5c5c3f",
-    textColor: "#fff",
-    iconBg: "#212121",
-    iconColor: "#fff",
-    content: "We use different language like python and learned Operating Systems, BASH, Networking and technoprenuership."
-  },
-  {
-    date: "2024 (Student)",
-    background: "#5c5c5c3f",
-    textColor: "#fff",
-    iconBg: "#212121",
-    iconColor: "#fff",
-    content: "We used arduino for our embedded system subject, and use C for programming it. Also I tried to learn React.js and Tailwind CSS"
-  },
-  {
-    date: "2025 (Student)",
-    background: "#5c5c5c3f",
-    textColor: "#fff",
-    iconBg: "#212121",
-    iconColor: "#fff",
-    content: "I become backend developer Intern at MONAD Solutions, my mentor is approachable and kind, I learned a lot from him. And our capstone we use python to program the uniAR: Uniform Fitting Kiosk using Augmented Reality"
-  },
-];
+
+    const[timelineData, timeline] = useState(null);
+
+      useEffect(() => {
+          fetch("/my-portfolio/timelineData.json")
+          .then((response) => {
+            if (!response.ok) throw new Error("Failed to fetch");
+            return response.json();
+          })
+          .then((json) => timeline(json))
+          .catch((error) => console.error("Error fetching data:", error));
+      },[])
+
+          if (!timelineData) return <p>Loading...</p>;
 
     return(
         <>
@@ -51,9 +30,8 @@ function Blog(){
                 <div className="absolute hidden lg:block lg:-top-2 lg:mt-[7vh] -right-0 mr-[29.5vh] lg:mr-[121.5vh] transform -translate-x-1/2 w-5 lg:w-15 h-1 bg-[#3125d4] rounded-full"></div>
             </h2>
         <section>
-            <section className="text-2xl pt-5 pb-10">
+            <section className="text-2xl pt-5 lg:p-[4vh] pb-10">
                 <p className="text-[2vh] border p-5 border-[#212121] shadow-black shadow-sm rounded-lg leading-relaxed">
-                    <h3 className="font-bold">Introduction</h3><br/>
                     Hello, This is my first time creating a blog page. Once again
                     I am Marck, let cut the obvious part. In this part I'll be sharing My
                     journey as a developer, the challenges I've faced, and the Lessons I've learned along the way.<br/><br/>

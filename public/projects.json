@@ -1,47 +1,62 @@
 {
     "projects": [{
         "title": "Phonebook",
+        "url" : "https://github.com/cattScratch/phonebook",
         "description": "Language that we used is java, data structure that we use is linkedlist. Basically this is just like a phonebook that store data such as phone number and name. I remember we just use txt as database."},
         {
         "title": "Survey Form",
+        "url" : "https://github.com/cattScratch/-Survey_form-",
         "description": "this is the project in freecodecamp to get the certification"},
         {
         "title": "Tribute Page",
+        "url" : "https://github.com/cattScratch/Tribute_Page",
         "description": "this is the project in freecodecamp to get the certification"},
         {
         "title": "Technical Documentation",
+        "url" : "https://github.com/cattScratch/technical_documentation",
         "description": "this is the project in freecodecamp to get the certification"},
         {
         "title": "Landing page",
+        "url" : "https://github.com/cattScratch/landing_page",
         "description": "this is the project in freecodecamp to get the certification"},
         {
         "title": "Alumni Tracking System",
+        "url" : "https://github.com/cattScratch/Alumni-Tracking-System",
         "description": "This is the first website project during my college year, the goal of this project is to track the alumni if their work is aligned with the course that they took."},
         {
         "title": "Role Playing Game",
+        "url" : "https://github.com/cattScratch/role_playing_game",
         "description": "This project is part of my freecodecamp journey learning data structure and algorithm, this is just basic html, css and javascript"},
         {
         "title": "Luhn Algorithm",
+        "url" : "https://github.com/cattScratch/luhn_algo",
         "description": "This project is part of my freecodecamp journey learning data structure and algorithm, this is the same as salt and pepper."},
         {
         "title": "Expense Tracker",
+        "url" : "https://github.com/cattScratch/expense_tracker",
         "description": "This project is part of my freecodecamp journey learning data structure and algorithm, I just use javascript here no css and html."},
         {
         "title": "Password Generator",
+        "url" : "https://github.com/cattScratch/pass_generator",
         "description": "I don't much remember this project, but as title says password generator. looking back again with this project I wonder why I didn't use regex"},
         {
         "title": "Guessing Game",
+        "url" : "https://github.com/cattScratch/guessing-game",
         "description": "This game will generate a random number from 1 to 100, then you need to guess that number, if your guess number is higher than the target number it will say higher else another way around. TLDR the logic is same as binary search."},
         {
         "title": "Trait Reroll",
+        "url" : "https://github.com/cattScratch/trait_reroll",
         "description": "This is a gatcha trait reroll for a character"},
         {
         "title": "Temperature Conversion",
+        "url" : "https://github.com/cattScratch/temp_conversion",
         "description": "jus a conversion from Celsius to Fahrenheit and vice versa"},
         {
         "title": "Hotel API",
+        "url" : "https://github.com/cattScratch/hotelApi",
         "description": "Just setting up an API using microsoft VScode and C#"},
         {
         "title": "UniAR: Uniform Fitting Kiosk using Augmented Reality",
+        "url" : "https://github.com/cattScratch/Capstone",
         "description": "This our capstone, we use python as language. The objective of our capstone is to eliminate the long queue, and manually fitting that can cause unpleasant smells."}
 ]}

@@ -74,7 +74,7 @@ function App(){
                                         <FontAwesomeIcon icon={item.icon} className="text-[1.5vh]" />
                                     </div>
                                 {item.link ? (
-                                    <a href={item.link} download className="ml-2 text-blue-500 text-sm sm:text-base">            
+                                    <a href={item.link} download className="ml-2 font-bold text-sm sm:text-base">            
                                         {item.label}
                                     </a>
                                 ):(           

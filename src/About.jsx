@@ -70,7 +70,7 @@ function About(){
                 <div className="grid grid-cols-2 xl:text-[2vh] text-center lg:grid-cols-4 mb-[5vh] gap-4 mt-5">
                     {skills.technical.map((skills,index) => (
                         <div key={index} 
-                        className="bg-[#5c5c5c3f] rounded-[5px] border-[#212121] shadow-black shadow-sm p-3">
+                        className="bg-[#5c5c5c3f] rounded-[5px] border-[#212121] shadow-black p-3">
                             <p>{skills}</p>
                         </div>
                     ))}
@@ -80,7 +80,7 @@ function About(){
                 <h4>Soft Skills</h4>
                 <div className="grid grid-cols-2 xl:text-[2vh] lg:grid-cols-4 gap-4 mt-5">
                     {skills.soft.map((skills,index) => (
-                        <div key={index} className="bg-[#5c5c5c3f] text-center rounded-[5px] border-[#212121] shadow-black shadow-sm p-3">
+                        <div key={index} className="bg-[#5c5c5c3f] text-center rounded-[5px] border-[#212121] shadow-black p-3">
                             <p>{skills}</p>
                         </div>
                     ))
@@ -111,7 +111,7 @@ function About(){
                         >
                     {skills.certificate.map((cert,index) => (
                         <SwiperSlide key={index}>
-                            <a href={cert.url} rel="noopener noreferrer"><img src={cert.img} alt={cert.title}/></a>
+                            <a href={cert.url} target="_blank" rel="noopener noreferrer"><img src={cert.img} alt={cert.title}/></a>
                         </SwiperSlide>
                     ))}
                    </Swiper>                 

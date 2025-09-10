@@ -1,7 +1,7 @@
 [
   {
     "icon": "faSchool",
-    "date": "2021 (Student)",
+    "date": "2021-2022 (Student)",
     "background": "#5c5c5c3f",
     "textColor": "#fff",
     "iconBg": "#212121",
@@ -10,7 +10,7 @@
   },
   {
     "icon": "faSchool",
-    "date": "2022 (Student)",
+    "date": "2022-2023 (Student)",
     "background": "#5c5c5c3f",
     "textColor": "#fff",
     "iconBg": "#212121",
@@ -19,7 +19,7 @@
   },
   {
     "icon": "faSchool",
-    "date": "2023 (Student)",
+    "date": "2023-2024 (Student)",
     "background": "#5c5c5c3f",
     "textColor": "#fff",
     "iconBg": "#212121",
@@ -28,7 +28,7 @@
   },
   {
     "icon": "faSchool",
-    "date": "2024 (Student)",
+    "date": "2024-2025 (Graduating Student)",
     "background": "#5c5c5c3f",
     "textColor": "#fff",
     "iconBg": "#212121",
@@ -37,7 +37,7 @@
   },
   {
     "icon": "faGraduationCap",
-    "date": "2025 (Student)",
+    "date": "2025 (Graduating Student/Graduated)",
     "background": "#5c5c5c3f",
     "textColor": "#fff",
     "iconBg": "#212121",

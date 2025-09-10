@@ -25,7 +25,7 @@ function Project() {
         
         {projects.map((project, index) => (
           <div key={index} className="mb-[6vh]">
-            <h3 className="font-bold text-[3vh] pt-1">{project.title}</h3>
+            <h3 className="font-bold text-[2vh] lg:text-[3vh] xl:text=[3vh] pt-1">{project.title}</h3>
             <p>{project.description}</p>
           </div>
         ))}

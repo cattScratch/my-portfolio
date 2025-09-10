@@ -13,7 +13,7 @@ import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 //files and images
 import Resume from './assets/files/Resume.pdf'
-import pfp from '../public/image/pfp.jpg';
+import pfp from './assets/pfp.jpg';
 
 function App(){
     //information to para don sa 1st container wag mo kakalimutan gumamit ako ng hashmap 
@@ -46,10 +46,10 @@ function App(){
         <>
             {/* main container - RESPONSIVE: stack on mobile, side-by-side on lg+ */}
         
-            <div className="flex flex-col lg:flex-row items-center lg:w-[190vh]  sm:p-8 lg:pr-30 lg:ml-20 gap-6 lg:gap-10">
+            <div className="flex flex-col lg:flex-row items-center lg:w-[190vh] sm:p-8 lg:pr-30 lg:ml-20 gap-6 lg:gap-10">
                 
                 {/* first container - RESPONSIVE: full width on mobile, fixed width on lg+ */}
-                <div className="w-[80%] mt-[5vh] lg:mt-[4vh] pt-10 lg:h-[85vh]  lg:w-auto rounded-[15px] lg:bg-[#212121] pr-6 lg:pr-10 pb-6 pl-6 lg:pl-10 ">
+                <div className="w-[80%] mt-[5vh] lg:mt-[4vh] pt-10 lg:h-[85vh] xl:h-[100vh] lg:w-auto rounded-[15px] lg:bg-[#212121] pr-6 lg:pr-10 pb-6 pl-6 lg:pl-10 ">
                     <div className="rounded-[15px]  lg:bg-[#5c5c5c3f] m-[10 p-4 lg:m-[0] lg:p-10">
                         <img src={pfp} alt="profile picure" className='w-full h-auto  max-w-48 mx-auto lg:mx-0 p-0 m-0 lg:rounded-[1vh] rounded-[100%] '/>
                     </div>
@@ -89,10 +89,10 @@ function App(){
                 </div>
                 
                 {/* second container - RESPONSIVE: full width on mobile, constrained on lg+ */}
-                <div className='w-[80%] lg:h-[85vh] lg:mt-[4vh] lg:bg-[#212121] rounded-[15px]  lg:w-full lg:max-w-360  overflow-hidden overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]' >
+                <div className='w-[80%] lg:h-[85vh] lg:mt-[4vh] lg:bg-[#212121] xl:h-[100vh] rounded-[15px]  lg:w-full lg:max-w-360  overflow-hidden overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]' >
                     
                     {/* RESPONSIVE: center nav on mobile, right-aligned on lg+ */}
-                    <ul className='flex gap-3 sm:gap-5 justify-center lg:justify-center lg:ml-265 pt-2 lg:pt-10 px-[8vh] lg:px-0 font-bold text-lg sm:text-xl lg:text-2xl '>
+                    <ul className='flex gap-3 sm:gap-5 justify-center lg:justify-center xl:ml-170 lg:ml-265 pt-2 lg:pt-10 px-[8vh] lg:px-0 font-bold text-lg sm:text-xl lg:text-2xl '>
                         <li className={`p-2 rounded-[5px] cursor-pointer text-sm sm:text-base lg:text-2xl ${active === 'about' ? 'bg-[#5c5c5c3f] text-white shadow-black shadow-sm ' : 'bg-[#5c5c5c3f]'}`}
                             onClick={() => setActive('about')} >
                             About

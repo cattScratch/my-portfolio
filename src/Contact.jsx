@@ -25,7 +25,7 @@ function Contact(){
         <form ref={form} onSubmit={sendEmail} className="grid grid-cols-1 pt-4">
             <input id="email" type="email" name="email" required className="p-1 mb-[4vh]  lg:ml-[4vh] lg:mt-[2vh] lg:w-[40vh] 2xl:ml-[4vh] 2xl:mt-[2vh] 2xl:w-[40vh] bg-[#5c5c5c3f] text-white " placeholder="Enter Your Email here"/>
             <input id="name" type="text" name="name" required className="p-1 mb-[4vh]  lg:ml-[4vh]  lg:w-[40vh] 2xl:ml-[4vh] 2xl:w-[40vh] bg-[#5c5c5c3f] text-white " placeholder="Enter Your Name"/>
-            <input id="subject" type="subject" name="subject" required className="p-1 mb-[4vh]  lg:ml-[4vh] lg:w-[40vh] 2xl:ml-[4vh] 2xl:w-[40vh] bg-[#5c5c5c3f] text-white " placeholder="Subject"/>
+            <input id="subject" type="text" name="subject" required className="p-1 mb-[4vh]  lg:ml-[4vh] lg:w-[40vh] 2xl:ml-[4vh] 2xl:w-[40vh] bg-[#5c5c5c3f] text-white " placeholder="Subject"/>
             <textarea id="message" name="message" required className="resize-none p-2 h-50 mb-[4vh] lg:ml-[4vh] lg:w-[126vh] 2xl:ml-[4vh] 2xl:w-[126vh] bg-[#5c5c5c3f] text-white" placeholder="Enter your message here..."/>
             <button id="sendButoon" type="Submit" 
             className="p-3 mb-5 bg-[#5c5c5c3f] lg:ml-[4vh] lg:w-[126vh] font-bold text-white shadow-black shadow-sm rounded-[1vh] hover:bg-green-600 active:bg-green-800 active:scale-95 px-4 py-2 transform transition duration-150 ease-in-out">

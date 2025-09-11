@@ -62,6 +62,9 @@ function About(){
                     I'm a fast learner, highly adaptable, and passionate about problem-solving. I thrive in environments where I can continuously learn and contribute meaningfully through code.
                     <br /><br/>
                     My current goal is to grow and enhance my skills in software development, and <span>to be part of innovative projects that make a real impact.</span>
+                    <br /><br/>
+                    <br /><br/>
+                    PS: 
                 </p>
                 {/* Skills */}
                 <h3 className="font-bold mt-10 lg:mt-10 text-2xl lg:text-5xl" >Skills</h3>

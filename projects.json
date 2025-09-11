@@ -6,19 +6,19 @@
         {
         "title": "Survey Form",
         "url" : "https://github.com/cattScratch/-Survey_form-",
-        "description": "this is the project in freecodecamp to get the certification"},
+        "description": "This is the project in freecodecamp to get the certification"},
         {
         "title": "Tribute Page",
         "url" : "https://github.com/cattScratch/Tribute_Page",
-        "description": "this is the project in freecodecamp to get the certification"},
+        "description": "This is the project in freecodecamp to get the certification"},
         {
         "title": "Technical Documentation",
         "url" : "https://github.com/cattScratch/technical_documentation",
-        "description": "this is the project in freecodecamp to get the certification"},
+        "description": "This is the project in freecodecamp to get the certification"},
         {
-        "title": "Landing page",
+        "title": "Landing Page",
         "url" : "https://github.com/cattScratch/landing_page",
-        "description": "this is the project in freecodecamp to get the certification"},
+        "description": "This is the project in freecodecamp to get the certification"},
         {
         "title": "Alumni Tracking System",
         "url" : "https://github.com/cattScratch/Alumni-Tracking-System",
@@ -50,13 +50,13 @@
         {
         "title": "Temperature Conversion",
         "url" : "https://github.com/cattScratch/temp_conversion",
-        "description": "jus a conversion from Celsius to Fahrenheit and vice versa"},
+        "description": "Just a conversion from Celsius to Fahrenheit and vice versa"},
         {
         "title": "Hotel API",
         "url" : "https://github.com/cattScratch/hotelApi",
         "description": "Just setting up an API using microsoft VScode and C#"},
         {
-        "title": "UniAR: Uniform Fitting Kiosk using Augmented Reality",
+        "title": "UniAR: Uniform Fitting Kiosk Using Augmented Reality",
         "url" : "https://github.com/cattScratch/Capstone",
         "description": "This our capstone, we use python as language. The objective of our capstone is to eliminate the long queue, and manually fitting that can cause unpleasant smells."}
 ]}

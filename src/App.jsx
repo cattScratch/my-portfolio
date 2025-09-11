@@ -5,9 +5,10 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faLocation } from '@fortawesome/free-solid-svg-icons';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 //components
-import About from './About'
+import About from './About';
 import Project from './Project';
 import Blog from './Blog';
+import Contact from './Contact';
 //hooks
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -101,9 +102,13 @@ function App(){
                             onClick={() => setActive('project')}>
                             Project
                         </li>
-                        <li className={`p-2 lg:mr-20 rounded-[5px] cursor-pointer text-sm sm:text-base lg:text-2xl ${active === 'blog' ? 'bg-[#5c5c5c3f] text-white shadow-black shadow-sm ' : 'bg-[#5c5c5c3f]'}`}
+                        <li className={`p-2 rounded-[5px] cursor-pointer text-sm sm:text-base lg:text-2xl ${active === 'blog' ? 'bg-[#5c5c5c3f] text-white shadow-black shadow-sm ' : 'bg-[#5c5c5c3f]'}`}
                             onClick={() => setActive('blog')}>
                             Blog
+                        </li>
+                        <li className={`p-2 lg:mr-50 rounded-[5px] cursor-pointer text-sm sm:text-base lg:text-2xl ${active === 'contact' ? 'bg-[#5c5c5c3f] text-white shadow-black shadow-sm ' : 'bg-[#5c5c5c3f]'}`}
+                            onClick={() => setActive('contact')}>
+                            Contact
                         </li>
                     </ul>
                     
@@ -142,6 +147,18 @@ function App(){
                             className="p-4 lg:p-5"
                             >
                             <Blog />
+                            </motion.div>
+                        )}
+                        {active === 'contact' && (
+                            <motion.div
+                            key="contact"
+                            initial={{ opacity: 0, x: 50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: -50 }}
+                            transition={{ duration: 0.4 }}
+                            className="p-4 lg:p-5"
+                            >
+                            <Contact />
                             </motion.div>
                         )}
                     </AnimatePresence>

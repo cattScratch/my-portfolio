@@ -59,6 +59,8 @@ function Blog(){
                     </VerticalTimelineElement>))}
                     </VerticalTimeline>
                 <p className="text-[2vh] border p-5 border-[#212121] shadow-black shadow-sm rounded-lg leading-relaxed">
+                        During college I'm discovering what I want for myself so I tried alot of things such as cisco skillsforall basic networking,
+                        freecodecamp, tryhackme, hackthebox. If you want to do capture the flag, I recommend to learn linux and BASH also a patience.  
                         Now I am a Graduate from being student, I'm Currently trying to patch some of my knowledge gaps and enhance my skills not only in web development but also
                         in Data Structure and Algorithms.
                         <br/><br/>

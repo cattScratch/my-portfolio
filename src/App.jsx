@@ -25,8 +25,8 @@ function App(){
   },
   { 
     icon: faCode, 
-    label: "Position", 
-    value: "Developer" 
+    label: "Focus on", 
+    value: "Software Developer" 
   },
   { 
     icon: faLocation, 
